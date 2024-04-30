@@ -1,0 +1,1 @@
+!function(){const n=document.querySelector("#nav"),o=document.querySelector("#nav__btn"),c=document.querySelector("#nav__btn-img");o.onclick=()=>{n.classList.toggle("open")?c.src="./img/icons/nav-close.svg":c.src="./img/icons/nav-open.svg",document.body.classList.toggle("no-scroll")},AOS.init({})}();

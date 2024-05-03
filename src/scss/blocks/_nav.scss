@@ -8,17 +8,6 @@
     }
 }
 
-.nav__button{
-    display: none;
-
-    @media screen and (max-width: 1230px){
-        display: block;
-        position: fixed;
-        top: 46px;
-        right: 30px;
-        z-index: 9;
-    }
-}
 
 .nav.open .nav__list{
     @media screen and (max-width: 1230px){

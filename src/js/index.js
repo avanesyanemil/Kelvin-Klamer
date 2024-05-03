@@ -1,14 +1,10 @@
-const nav = document.querySelector('#nav');
-const navBtn = document.querySelector('#nav__btn');
-const navBtnImg = document.querySelector('#nav__btn-img');
+/* Nav icon */
+const navBtn = document.querySelector('.nav-icon-btn');
+const navIcon = document.querySelector('.nav-icon');
+const nav = document.querySelector('.header__nav');
 
-navBtn.onclick = () => {
-    if (nav.classList.toggle('open')) {
-        navBtnImg.src = "./img/icons/nav-close.svg";
-    }
-    else{
-        navBtnImg.src = "./img/icons/nav-open.svg";
-    }
-    //document.body.classList.toggle('no-scroll');
+navBtn.onclick = function () {
+    navIcon.classList.toggle('nav-icon--active');
+    nav.classList.toggle('header__nav--mobile');
+    document.body.classList.toggle('no-scroll');
 }
-
